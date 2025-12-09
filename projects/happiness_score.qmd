@@ -1,5 +1,31 @@
 ---
-title: "happiness_score"
+title: "Predicting 2024 World Happiness Scores"
 format: html
 ---
+
+## Goal
+
+To predict the 2024 Ladder Score for each country and to understand which factors in 2023 influence the happiness score the following year.
+
+## Data Cleaning 
+
+- Merged datasets containing the 2023 and 2024 World       Happiness Reports side by side on country name 
+- Dropped rows with missing values 
+- Excluded columns that could leak outcome information
+    Upper whisker 
+    Lower whisker 
+    Dystopia + residual value (leftover part of the          happiness score that isn't explained by other            factors)
+- Selected 2023 features as predictors and 2024 ladder     score as the target 
+- Originally, I wanted to predict the change in ladder     score from 2023 to 2024
+
+## Models Used
+
+Linear Regression
+Ridge Regression 
+Lasso Regression 
+Random Forest 
+Gradient Boosting 
+XGBoost 
+
+XGBoost wins
 

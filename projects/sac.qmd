@@ -1,5 +1,63 @@
 ---
-title: "sac"
+title: "SAC Data Cleaning"
 format: html
 ---
+
+# What is SAC
+
+Shelter Animals Count (SAC) is an organization that collects and shares data from animal shelters across the United States and Canada. Their goal is to improve outcomes for animals and inform policy decision. SAC provided our group with shelter intake and outcome data for our analysis.The data set contains information from 13,636 shelters. Not all shelters submit data and even the ones that do often submit inconsistently.
+
+# Our Goal
+
+To create models in order to predict the total number of animals in shelters with unreported or missing data. 
+
+# Data Cleaning
+
+The raw data contained major reporting errors and my group mainly focused on cleaning the data. 
+
+## Step 1: 
+
+- If a shelter didn’t report both beginning and ending counts:
+    We replace those values with NAs (missing)
+- Why?
+    These rows stay in the data set but are excluded from     model training and testing 
+    Makes the model more reliable
+    
+## Step 2:
+- Sometimes only one of the four values was zero
+- These values being: beginning, ending, gross intakes,    and gross outcomes
+- If only one value was zero, we attempted to calculate    it from the other three 
+      beginning + gross intakes – gross outcomes = ending
+- If calculation produced:
+      A negative number 
+      A wildly incorrect value
+      -> We replaced it with NA
+      
+## Step 3: 
+- The ending animal count may be off by a particular        scale
+- Example:
+    Calculated ending = 132
+    Reported ending = 1320
+- We corrected these by removing the extra zero and        putting in the correct calculation 
+
+## Step 4: 
+- If ending count looked wrong, we checked the next        month’s beginning count 
+- If next month’s beginning count looked correct, we       replaced the ending count with that value 
+- This was a last resort to fix single month reporting     mistakes 
+
+# The Code
+
+## Outliers File
+
+```{r}
+```
+
+
+## Data Cleaing File
+
+```{r}
+
+```
+
+
 
