@@ -9,8 +9,15 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Kaley Lanza | Portfolio",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Hi! I’m Kaley. Here are some of my school and data projects.\n\n\n\n[Shelter Animals Count Data Cleaning](projects/sac.qmd)\n[Predicting 2024 Happiness Score](projects/happiness_score.qmd)\n[Creating Artificial Terrain for Marshan Shy](artificial_terrain.qmd)"
+  },
+  {
+    "objectID": "about.html#projects",
+    "href": "about.html#projects",
+    "title": "Kaley Lanza | Portfolio",
+    "section": "",
+    "text": "[Shelter Animals Count Data Cleaning](projects/sac.qmd)\n[Predicting 2024 Happiness Score](projects/happiness_score.qmd)\n[Creating Artificial Terrain for Marshan Shy](artificial_terrain.qmd)"
   }
 ]
