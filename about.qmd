@@ -9,11 +9,8 @@ Hi! I'm Kaley. Here are some of my school and data projects.
 
 ## Projects 
 
--   \[Shelter Animals Count Data Cleaning\](projects/sac.qmd)
+-   [Shelter Animals Count Data Cleanin](projects/sac.qmd)g
 
--   \[Predicting 2024 Happiness Score\](projects/happiness_score.qmd)
+-   [Predicting 2024 Happiness Score](projects/happiness_score.qmd)
 
--   \[Creating Artificial Terrain for Marshan Shy\](artificial_terrain.qmd)
-
-```{}
-```
+-   [Creating Artificial Terrain for Marshan Sky](projects/artificial_terrain)
